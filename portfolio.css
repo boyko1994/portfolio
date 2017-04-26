@@ -1,0 +1,380 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {height: 100%;}
+body {
+	width: 100%;
+	height: 100%;
+	font: 14px/24px Arial, Tahoma, sans-serif;
+	background-color: #ebebeb;
+}
+ol, ul {list-style: none;}
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, a:hover {text-decoration: none;}
+
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {clear: both;}
+
+.left {float:left;}
+.right {float:right;}
+.text-right {text-align: right;}
+
+
+
+
+/* НАВІГАЦІЯ*/
+header {
+	position: relative;
+	background:#010101;
+}
+
+.logo img{
+	float: left;
+	width:80px;
+	margin: 5px 0 5px 15px;
+}
+.nav {
+	float: right; 
+	padding-right: 80px;
+}
+.nav li {
+	float: left;
+	padding-top:35px;
+	background:#010101;
+}
+.nav li a{
+	font: bold 20px Arial, sans-serif;
+	color: #2B9C0B;
+	padding: 10px 30px;
+}
+ul.nav li a:hover {
+	color: #010101;
+	border-radius: 40px;
+	background: #2B9C0B;
+}
+.divide {
+	display: none;
+	height: 3px;
+	width: 25px;
+	margin: 5px 0;
+	background:#2B9C0B;
+}
+
+
+
+/* КОНТЕНТ*/
+.container{
+	width: 80%;
+	max-width:1200px;
+	background: #D7FBC9 ;
+	margin: 0 10%;
+	box-shadow: 10px -10px 5px #888888,-10px -10px 5px #888888;
+}
+.about{
+	height: 320px;
+}
+.description{
+	width: 70%;
+	float: left;
+	text-align: center;
+	margin-top: 50px;
+	color:#2B9C0B;
+	font-family:'Lobster';
+	font-weight:bold;
+}
+.description h1{
+	font-size: 68px;
+	line-height:78px;
+	
+}
+.description h2{
+	font-size: 36px;
+	line-height: 58px;
+}
+.photo{
+	width: 30%;	
+	float: right;
+	padding:  45px 15px;
+}
+.photo img{
+	width: 100%;
+	height: 80%;
+	border-radius:50%;
+}
+.photo img:hover{
+	opacity: 0.8;
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	transform: scale(.9);
+}
+.title{
+	padding-top:30px;	
+	font:bold 30px/24px 'OpenSans',sans-serif;
+	color:#0c2e3b;
+	margin-bottom: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+hr{
+    padding: 0;
+    border: none;
+    border-top: medium double #999;
+    color: #999;
+    margin: 0 70px;
+    text-align: center;
+}
+hr:before {
+    content: "</>";
+    display: inline-block;
+    position: relative;
+    top: -0.6em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #D7FBC9;
+}
+.portfolio{
+	width: 100%;
+
+	
+}
+.jobs{
+	width: 50%;
+	float: left;
+	padding: 10px 10%;
+}
+.jobs:last-child{
+	margin-bottom: 70px;
+}
+.jobs img{
+	width: 100%;
+	box-shadow: 10px -10px 15px #888888;
+}
+.jobs img:hover{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.some{
+	width: 230px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.some a{
+	float: left;
+	margin: 0 5px;
+}
+.contacts h1{
+	padding: 50px 0 ; 
+	text-align: center;
+	font:bold 25px 'colonna mt';
+	color:#0c2e3b;
+}
+
+
+/*FOOTER*/
+footer{
+	width: 100%;
+	background-color: #000;
+	color: #2B9C0B;
+	text-align: center;
+	padding: 20px;
+	font-size: 16px;
+
+}
+
+
+/*КНОПКА ВВЕРХ*/
+#toTop {
+	width:40px;
+	height:40px;  
+	border-radius:20px ;  
+	border:2px solid #111;
+	background:#2B9C0B;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:20px; /* отступ кнопки от нижнего края страницы*/
+	right:7px;
+	cursor:pointer;
+	display:none;
+	color:#f1f1f1;
+	font-family:verdana;
+	font-size:15px;
+}
+#toTop:hover {
+	color:#2B9C0B;
+	background:#010101;
+}
+.fa{
+	font-size: 27px !important;
+	padding:  10px 10px;
+	border-radius: 50%;
+	color: #2B9C0B;
+	background: #010101; 
+}
+.fa-vk:hover{
+	color: #fff;
+	background-color: #507299;
+}
+.fa-instagram:hover{
+	color: #fff;
+	background: linear-gradient(-135deg, #864CBD, #FEC96A);
+}
+.fa-twitter:hover{
+	color: #1DA1F2;
+	background-color: #fff;
+}
+.fa-codepen:hover{
+	color: #fff;
+	background-color: #000;
+}  
+          
+@media screen and (max-width: 1024px) {
+	.photo img{
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+}
+@media screen and (max-width: 880px) {
+	.photo img{
+		padding-top: 65px;
+		padding-bottom: 65px;
+	}
+}
+@media screen and (max-width: 768px) {
+	/* НАВІГАЦІЯ*/
+	header {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.logo img {
+		float: left;
+		width:55px;
+
+	}
+	.nav {
+		position: absolute;
+		z-index: 1;
+		display: none;
+		top:100%;
+		right: -11%;
+		left: 10%;
+		border-top:solid 2px #fac;
+	}
+	#touch-menu {
+		float: right;
+		margin: 14px 10px;
+		padding: 5px;
+		border:1px solid #2B9C0B;
+		border-radius:5px;
+	}
+	#touch-menu:hover{
+		background:#D7FBC9;
+	}
+	.divide {
+		display:block;
+	}
+	.nav li{
+		display: block !important; 
+		float:none;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	.nav  li a{
+		font: bold 16px Arial, sans-serif;
+		padding: 2%   40%;
+	}
+
+	/*КОНТЕНТ*/
+	.container{
+		padding-top: 80px;
+	}
+	.description,.photo{
+		width: 100%;
+	}
+	.photo img{
+		padding: 0;
+		height: auto;
+	}
+	
+	.jobs{
+		padding: 10px 6%;
+	}
+	
+	
+	
+}
+@media screen and (max-width: 586px) {
+	.nav  li a{
+		padding: 2%   30%;
+	}
+	.description{
+		margin-top: 5px;
+	}
+	.description h1{
+		font-size: 48px;
+		line-height:58px;
+	}
+	.description h2{
+		font-size: 26px;
+		line-height: 48px;
+	}
+
+	
+
+}
+@media screen and (max-width: 480px) {
+	hr{
+		margin: 0 30px;
+	}
+	.jobs{
+		width: 100%;
+		margin: 0 ;
+		padding: 10px 10%;
+
+	}
+}	
+@media screen and (max-width: 320px) {
+	.nav  li a{
+		padding: 4 %   25%;
+	}
+
+}
