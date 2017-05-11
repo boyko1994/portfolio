@@ -293,7 +293,7 @@ footer{
 		position: absolute;
 		z-index: 1;
 		display: none;
-		padding-right:0;
+		padding-right:0px;
 		top:100%;
 		right: 10;
 		left: 10%;
